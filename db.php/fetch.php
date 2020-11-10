@@ -13,7 +13,7 @@
     include_once('db_config.php');
     include_once('navbar.php');
 
-    $fetch_query = mysqli_query($con, "selest * from sk");
+    $fetch_query = mysqli_query($con, "selest * from users");
     $query_rows = mysqli_num_rows($fetch_query);
 
     if($query_rows>0)
